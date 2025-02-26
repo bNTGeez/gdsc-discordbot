@@ -11,6 +11,8 @@ module.exports = {
     .setDefaultMemberPermissions(PermissionFlagsBits.ManageRoles), // Only admins can use this
 
   async execute(interaction) {
+
+    // roles
     const roleMap = {
       "🧍": "General Member",
       "👨‍💻": "Explore Cohort",
