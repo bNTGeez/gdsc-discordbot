@@ -11,6 +11,7 @@ const client = new Client({
     GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMessages,
     GatewayIntentBits.MessageContent,
+    GatewayIntentBits.GuildMembers,
   ],
 });
 
@@ -72,4 +73,13 @@ client.on(Events.InteractionCreate, async (interaction) => {
   }
 });
 
-client.login(process.env.DISCORDTOKEN);
+client.on('guildMemberAdd', async (member) => {
+  const channel = member.guild.channels.cache.find(ch => ch.name === 'welcome');
+  if (!channel) return;
+
+  channel.send(`Welcome to the server, ${member.user.tag}! 🎉 
+Head over to #roles to select the cohort you belong to!
+For more information about us, visit https://bento.me/gdscdavis 
+and go check out the #🔔announcements channel for the latest news about our club!`);
+});
+
