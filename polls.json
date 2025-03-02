@@ -1,0 +1,99 @@
+[
+    {
+        "question": "Which of these is the superior pasta shape?",
+        "options": ["Spaghetti", "Penne", "Farfalle (Bowtie)", "Macaroni"],
+        "emojis": ["🍝", "🍜", "🎀", "🧀"]
+    },
+    {
+        "question": "What's the right way to cut a sandwich?",
+        "options": ["Diagonally (Correct)", "Straight down the middle (Wrong)", "Tear it apart like a beast", "I don’t cut my sandwiches"],
+        "emojis": ["🔺", "⬜", "🦍", "🚫"]
+    },
+    {
+        "question": "What is the best chip flavor?",
+        "options": ["Sour Cream & Onion", "Barbecue", "Salt & Vinegar", "Plain (You’re boring)"],
+        "emojis": ["🧅", "🔥", "🍋", "🥔"]
+    },
+    {
+        "question": "Which of these common things is actually *overrated*?",
+        "options": ["AirPods", "Pumpkin Spice Lattes", "Avocado Toast", "Gym Culture"],
+        "emojis": ["🎧", "🎃", "🥑", "💪"]
+    },
+    {
+        "question": "What is the CORRECT way to put toilet paper on the roll?",
+        "options": ["Over (Obviously correct)", "Under (Psychopath)", "I just leave it on the counter", "I don’t use toilet paper"],
+        "emojis": ["⬆️", "⬇️", "🤷", "🚽"]
+    },
+    {
+        "question": "Who would win in a 1v1 street fight?",
+        "options": ["A goose (pure rage)", "A raccoon (feral energy)", "An average 5th grader", "A Roomba with a knife taped to it"],
+        "emojis": ["🦢", "🦝", "👶", "🤖"]
+    },
+    {
+        "question": "Your friend is *wrong* about something. What do you do?",
+        "options": ["Let it go", "Correct them IMMEDIATELY", "Google it to prove them wrong", "Double down even if you’re also wrong"],
+        "emojis": ["🤷", "⚔️", "📱", "😈"]
+    },
+    {
+        "question": "Which Mario Kart item is the most toxic?",
+        "options": ["Blue Shell (destroys friendships)", "Lightning Bolt (annoying)", "Banana (secretly dangerous)", "Bullet Bill (skill issue)"],
+        "emojis": ["🔵", "⚡", "🍌", "🚀"]
+    },
+    {
+        "question": "Which of these should be banned forever?",
+        "options": ["Pineapple on pizza", "People who chew loudly", "Unskippable YouTube ads", "Autoplaying website videos"],
+        "emojis": ["🍍", "👂", "⏳", "🔊"]
+    },
+    {
+        "question": "What's the best cereal milk ratio?",
+        "options": ["Milk first (Monster)", "Cereal first (The only way)", "Dry cereal, no milk", "I eat cereal with water"],
+        "emojis": ["🥛", "🥣", "🚫", "💧"]
+    },
+    {
+    "question": "You're at a party and someone hands you a mystery drink. What do you do?",
+    "options": ["Drink it (YOLO)", "Sniff it first", "Make someone else try it first", "Politely decline and leave"],
+    "emojis": ["🥤", "👃", "👀", "🚪"]
+    },
+    {
+    "question": "Which fast food chain would survive a Hunger Games scenario?",
+    "options": ["McDonald's (unstoppable)", "Taco Bell (chaotic energy)", "Chick-fil-A (tactical kindness)", "Subway (??? they’re just there)"],
+    "emojis": ["🍔", "🌮", "🐔", "🥪"]
+    },
+    {
+    "question": "The ultimate *red flag* in a person is when they say:",
+    "options": ["'I don’t like dogs'", "'Pineapple does not belong on pizza'", "'I don’t watch movies or tv shows'", "'I don’t use emojis'"],
+    "emojis": ["🐶", "🍍", "🎥", "❌"]
+    },
+    {
+    "question": "What's the **worst** thing to find in your fridge?",
+    "options": ["Moldy leftovers", "An unmarked mystery container", "Milk that expired 3 months ago", "Nothing. It's empty."],
+    "emojis": ["🤢", "❓", "🥛", "😨"]
+    },
+    {
+    "question": "What's the correct way to pronounce 'GIF'?",
+    "options": ["Hard G (like 'gift')", "Soft G (like 'jif')", "I just say 'animated meme'", "I avoid saying it out loud"],
+    "emojis": ["🧐", "🤔", "😂", "😶"]
+    },
+    {
+    "question": "Your internet goes out for a full day. What do you do?",
+    "options": ["Read a book (gross)", "Touch grass", "Panic and restart the router 100 times", "Accept my fate and sleep"],
+    "emojis": ["📖", "🌱", "🔄", "😴"]
+    },
+    {
+    "question": "Which of these animals would make the worst pet?",
+    "options": ["Octopus (too smart)", "Goat (chaos incarnate)", "Parrot (never stops talking)", "Spider (why would you do this)"],
+    "emojis": ["🐙", "🐐", "🦜", "🕷️"]
+    },
+    {
+    "question": "You can only listen to one genre for the rest of your life. Choose wisely.",
+    "options": ["Pop", "Rock", "Country", "EDM"],
+    "emojis": ["🎤", "🎸", "🤠", "🎧"]
+    },
+    {
+    "question": "What’s the **worst** part of getting older?",
+    "options": ["Taxes", "Back pain for no reason", "Liking schedules & routines", "Not understanding new slang"],
+    "emojis": ["💰", "🤕", "📅", "🧓"]
+    }
+]
+  
+  
