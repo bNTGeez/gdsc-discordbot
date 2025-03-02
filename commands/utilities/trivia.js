@@ -1,4 +1,5 @@
-const { SlashCommandBuilder } = require('discord.js');
+const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
+const { ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
 const he = require('he'); // HTML entity decoder
 
 module.exports = {
@@ -20,29 +21,71 @@ module.exports = {
 
         const correctIndex = answers.findIndex(ans => ans === correctAnswer) + 1;
         
-        let options = answers.map((ans, index) => `**${index + 1}.** ${ans}`).join('\n');
+        const options = new ActionRowBuilder()
+        .addComponents(
+            new ButtonBuilder()
+                .setCustomId('1')
+                .setLabel(answers[0])
+                .setStyle(ButtonStyle.Primary),
+            new ButtonBuilder()
+                .setCustomId('2')
+                .setLabel(answers[1])
+                .setStyle(ButtonStyle.Primary),
+            new ButtonBuilder()
+                .setCustomId('3')
+                .setLabel(answers[2])
+                .setStyle(ButtonStyle.Primary),
+            new ButtonBuilder()
+                .setCustomId('4')
+                .setLabel(answers[3])
+                .setStyle(ButtonStyle.Primary)
+        );
 
-        await interaction.reply(`**Trivia Time! Choose the correct answer by typing its number.**
-*You have 15 seconds to answer before time is up!*
-\n${question}\n\n${options}`);
+        const triviaEmbed = new EmbedBuilder()
+        .setColor(0x0099FF)
+        .setTitle('Trivia Time!')
+        .setDescription(`**Choose the correct answer from the options below**\n*You have 15 seconds to answer before time is up!*\n\n**${question}**`);
 
-        const filter = (response) => {
-            if (response.author.id !== interaction.user.id) return false; // Ignore messages from other users
-            return /^\d+$/.test(response.content.trim());
-        };
+        await interaction.reply({
+            embeds: [triviaEmbed],
+            components: [options],
+        });
 
+        // Only accept the user's interactions
+        const filter = (i) => i.user.id === interaction.user.id;
         const channel = await interaction.channel;
-        channel.awaitMessages({ filter, max: 1, time: 15000, errors: ['time'] })
-        .then(collected => {
-            const userResponse = collected.first().content.trim();
-            if (userResponse === correctIndex.toString()) {
-                channel.send(`🎉 Correct! The answer is **${correctAnswer}**.`);
+
+        const collector = interaction.channel.createMessageComponentCollector({
+            filter,
+            time: 15000,
+        });
+
+        const responseEmbed = new EmbedBuilder()
+        .setColor(0x0099FF)
+        .setTitle('Trivia Time!');
+
+        collector.on('collect', async (i) => {
+            if (i.customId === correctIndex.toString()) {
+                await i.update({
+                    embeds: [responseEmbed.setDescription(`*${question}*\n\n🎉 Correct! The answer is **${correctAnswer}**.`)],
+                    components: [],
+                });
             } else {
-                channel.send(`❌ Wrong! The correct answer was **${correctAnswer}**.`);
+                await i.update({
+                    embeds: [responseEmbed.setDescription(`*${question}*\n\n❌ Wrong! The correct answer was **${correctAnswer}**.`)],
+                    components: [],
+                });
             }
-        })
-        .catch(() => {
-            channel.send(`⏳ Time's up! The correct answer was **${correctAnswer}**.`);
+            collector.stop();
+        });
+
+        collector.on('end', async (collected, reason) => {
+            if (reason === 'time') {
+                await interaction.editReply({
+                    embeds: [responseEmbed.setDescription(`*${question}*\n\n⏳ Time's up! The correct answer was **${correctAnswer}**.`)],
+                    components: [],
+                });
+            }
         });
     }
 }
