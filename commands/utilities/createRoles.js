@@ -11,6 +11,8 @@ module.exports = {
     .setDefaultMemberPermissions(PermissionFlagsBits.ManageRoles), // Only admins can use this
 
   async execute(interaction) {
+    // Defer the reply using flags
+    await interaction.deferReply({ flags: 64 }); // 64 is the flag for ephemeral messages
 
     // roles
     const roleMap = {
@@ -37,6 +39,10 @@ module.exports = {
       await message.react(emoji);
     }
 
-    await interaction.reply({ content: "Role menu created!", ephemeral: true });
+    // Edit the deferred reply using flags
+    await interaction.editReply({
+      content: "Role menu created!",
+      flags: 64,
+    });
   },
 };
