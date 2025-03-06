@@ -1,0 +1,21 @@
+{
+  "messageId": "1347000482521939991",
+  "channelId": "1341578884742909952",
+  "question": "What’s the best pasta shape?",
+  "options": [
+    "Spaghetti",
+    "Penne",
+    "Bowtie",
+    "Macaroni"
+  ],
+  "emojis": [
+    "🍝",
+    "🥄",
+    "🎀",
+    "🧀"
+  ],
+  "votes": {},
+  "isOpen": true,
+  "startedAt": 1741220340883,
+  "endsAt": 1741306740883
+}
