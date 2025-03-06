@@ -97,7 +97,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
 
 
 
-//welcomeMsg = `**Head over to #roles to select the cohort you belong to!**\nFor more information about us, visit https://bento.me/gdscdavis 
+welcomeMsg = `**Head over to #roles to select the cohort you belong to!**\nFor more information about us, visit https://bento.me/gdscdavis 
 and go check out the #🔔announcements channel for the latest news about our club!`
 
 client.on('guildMemberAdd', async (member) => {

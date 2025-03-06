@@ -2,6 +2,7 @@ const {
   SlashCommandBuilder,
   EmbedBuilder,
   PermissionFlagsBits,
+  MessageFlags,
 } = require("discord.js");
 
 module.exports = {
@@ -12,7 +13,7 @@ module.exports = {
 
   async execute(interaction) {
     // Defer the reply using flags
-    await interaction.deferReply({ flags: 64 }); // 64 is the flag for ephemeral messages
+    await interaction.deferReply({ flags: MessageFlags.Ephemeral });
 
     // roles
     const roleMap = {
@@ -42,7 +43,7 @@ module.exports = {
     // Edit the deferred reply using flags
     await interaction.editReply({
       content: "Role menu created!",
-      flags: 64,
+      flags: MessageFlags.Ephemeral,
     });
   },
 };

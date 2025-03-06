@@ -12,11 +12,11 @@
   "dependencies": {
     "discord.js": "^14.18.0",
     "dotenv": "^16.4.7",
-    "node-cron": "^3.0.3",
-    "sqlite3": "^5.1.7",
     "fuse.js": "^7.1.0",
     "he": "^1.2.0",
-    "node-fetch": "^3.3.2"
+    "node-cron": "^3.0.3",
+    "node-fetch": "^3.3.2",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "@eslint/js": "^9.18.0",
