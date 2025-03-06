@@ -8,6 +8,7 @@ const {
 } = require("discord.js");
 const fs = require("node:fs");
 const path = require("node:path");
+const { EmbedBuilder } = require('discord.js');
 
 require("dotenv").config();
 
@@ -17,7 +18,10 @@ const client = new Client({
     GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMessages,
     GatewayIntentBits.MessageContent,
+<<<<<<< HEAD
     GatewayIntentBits.GuildMessageReactions,
+=======
+>>>>>>> 503ec5aa71558fb38e6335f2e03cff282d8e45c2
     GatewayIntentBits.GuildMembers,
   ],
   partials: [Partials.Message, Partials.Channel, Partials.Reaction],
@@ -81,6 +85,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
   }
 });
 
+<<<<<<< HEAD
 // Load reaction events
 const eventsPath = path.join(__dirname, "events");
 const eventFiles = fs
@@ -96,3 +101,20 @@ for (const file of eventFiles) {
     client.on(event.name, (...args) => event.execute(...args));
   }
 }
+=======
+welcomeMsg = `**Head over to #roles to select the cohort you belong to!**\nFor more information about us, visit https://bento.me/gdscdavis 
+and go check out the #🔔announcements channel for the latest news about our club!`
+
+client.on('guildMemberAdd', async (member) => {
+  const channel = member.guild.channels.cache.find(ch => ch.name === 'welcome');
+  if (!channel) return;
+
+  const embed = new EmbedBuilder()
+  .setColor(0x00AE86)
+  .setTitle(`Welcome to the server, ${member.user.tag}! 🎉 `)
+  .setDescription(welcomeMsg);
+
+  channel.send({embeds: [embed]});
+});
+
+>>>>>>> 503ec5aa71558fb38e6335f2e03cff282d8e45c2
