@@ -1,5 +1,11 @@
 [
-    { "question": "What is your name?", "answer": "Ben" },
-    { "question": "When are general meetings?", "answer": " 6:30pm at Walker 1310" },
-    { "question": "What is this club?", "answer": "GDSC" }
+    { "question": "When are GDSC meetings?", "answer": "6:30pm at Walker 1310" },
+    { "question": "Where are GDSC meetings?", "answer": "6:30pm at Walker 1310" },
+    { "question": "What is GDSC?", "answer": "GDSC is a program powered by Google Developers designed for students of all backgrounds to learn a wide variety of skills + technologies!" },
+    { "question": "Where can I learn more about GDSC?", "answer": "Use /faq to ask specific questions or list all available questions, or contact a GDSC board member to learn more!"},
+    { "question": "Who can join GDSC?", "answer": "Anyone interested in coding and learning new skills can join!"},
+    { "question": "How do I join GDSC?", "answer": "You can apply to join GDSC on the website https://bento.me/gdscdavis"},
+    { "question": "What events and activities does GDSC host?", "answer": "We host coding workshops, guest speakers, and project collaboration opportunities."},
+    { "question": "Does it cost money to join GDSC?", "answer": "No, membership is free for all students!"},
+    { "question": "How can I stay updated/find GDSC on social media?", "answer": "You can follow GDSC on instagram at @gdsc_ucdavis or visit our website at https://bento.me/gdscdavis for more social and event information!"}
 ]
