@@ -2,6 +2,7 @@
 const { Client, Events, GatewayIntentBits, Collection } = require("discord.js");
 const fs = require("node:fs");
 const path = require("node:path");
+const { EmbedBuilder } = require('discord.js');
 
 require("dotenv").config();
 
@@ -12,6 +13,7 @@ const client = new Client({
     GatewayIntentBits.GuildMessages,
     GatewayIntentBits.MessageContent,
     GatewayIntentBits.GuildMessageReactions,
+    GatewayIntentBits.GuildMembers,
     GatewayIntentBits.GuildMembers,
   ],
 });
@@ -95,7 +97,21 @@ client.on(Events.InteractionCreate, async (interaction) => {
 
 
 
-//client.login(process.env.DISCORDTOKEN);
+//welcomeMsg = `**Head over to #roles to select the cohort you belong to!**\nFor more information about us, visit https://bento.me/gdscdavis 
+and go check out the #🔔announcements channel for the latest news about our club!`
+
+client.on('guildMemberAdd', async (member) => {
+  const channel = member.guild.channels.cache.find(ch => ch.name === 'welcome');
+  if (!channel) return;
+
+  const embed = new EmbedBuilder()
+  .setColor(0x00AE86)
+  .setTitle(`Welcome to the server, ${member.user.tag}! 🎉 `)
+  .setDescription(welcomeMsg);
+
+  channel.send({embeds: [embed]});
+});
+
 
 // // Require the necessary discord.js classes
 // const { Client, Events, GatewayIntentBits, Collection } = require("discord.js");
