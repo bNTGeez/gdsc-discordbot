@@ -1,99 +1,173 @@
 [
     {
-        "question": "Which of these is the superior pasta shape?",
-        "options": ["Spaghetti", "Penne", "Farfalle (Bowtie)", "Macaroni"],
-        "emojis": ["🍝", "🍜", "🎀", "🧀"]
+      "question": "Which coding editor rules them all?",
+      "options": ["VSCode", "Vim", "Emacs", "Sublime"],
+      "emojis": ["💻", "📝", "🔮", "🔥"]
     },
     {
-        "question": "What's the right way to cut a sandwich?",
-        "options": ["Diagonally (Correct)", "Straight down the middle (Wrong)", "Tear it apart like a beast", "I don’t cut my sandwiches"],
-        "emojis": ["🔺", "⬜", "🦍", "🚫"]
+      "question": "Python vs JavaScript?",
+      "options": ["Python", "JS", "Both", "Neither"],
+      "emojis": ["🐍", "☕", "🤷", "❌"]
     },
     {
-        "question": "What is the best chip flavor?",
-        "options": ["Sour Cream & Onion", "Barbecue", "Salt & Vinegar", "Plain (You’re boring)"],
-        "emojis": ["🧅", "🔥", "🍋", "🥔"]
+      "question": "Next big tech frontier?",
+      "options": ["AI", "Quantum", "Blockchain", "BioTech"],
+      "emojis": ["🤖", "⚛️", "🔗", "🧬"]
     },
     {
-        "question": "Which of these common things is actually *overrated*?",
-        "options": ["AirPods", "Pumpkin Spice Lattes", "Avocado Toast", "Gym Culture"],
-        "emojis": ["🎧", "🎃", "🥑", "💪"]
+      "question": "Tabs or spaces?",
+      "options": ["Tabs", "Spaces"],
+      "emojis": ["➡️", "␣"]
     },
     {
-        "question": "What is the CORRECT way to put toilet paper on the roll?",
-        "options": ["Over (Obviously correct)", "Under (Psychopath)", "I just leave it on the counter", "I don’t use toilet paper"],
-        "emojis": ["⬆️", "⬇️", "🤷", "🚽"]
+      "question": "Whiteboard interviews: good or bad?",
+      "options": ["Good", "Bad", "Outdated", "Necessary"],
+      "emojis": ["✅", "❌", "🕰️", "🔑"]
     },
     {
-        "question": "Who would win in a 1v1 street fight?",
-        "options": ["A goose (pure rage)", "A raccoon (feral energy)", "An average 5th grader", "A Roomba with a knife taped to it"],
-        "emojis": ["🦢", "🦝", "👶", "🤖"]
+      "question": "Best phone OS?",
+      "options": ["iOS", "Android", "Windows", "No Phone"],
+      "emojis": ["🍎", "🤖", "🪟", "🙅"]
     },
     {
-        "question": "Your friend is *wrong* about something. What do you do?",
-        "options": ["Let it go", "Correct them IMMEDIATELY", "Google it to prove them wrong", "Double down even if you’re also wrong"],
-        "emojis": ["🤷", "⚔️", "📱", "😈"]
+      "question": "Preferred coding fuel?",
+      "options": ["Coffee", "Tea", "Energy", "Water"],
+      "emojis": ["☕", "🍵", "⚡", "💧"]
     },
     {
-        "question": "Which Mario Kart item is the most toxic?",
-        "options": ["Blue Shell (destroys friendships)", "Lightning Bolt (annoying)", "Banana (secretly dangerous)", "Bullet Bill (skill issue)"],
-        "emojis": ["🔵", "⚡", "🍌", "🚀"]
+      "question": "Which area will dominate?",
+      "options": ["Cybersec", "BigData", "ML", "VR/AR"],
+      "emojis": ["🛡️", "📊", "🤖", "👓"]
     },
     {
-        "question": "Which of these should be banned forever?",
-        "options": ["Pineapple on pizza", "People who chew loudly", "Unskippable YouTube ads", "Autoplaying website videos"],
-        "emojis": ["🍍", "👂", "⏳", "🔊"]
+      "question": "Best break activity?",
+      "options": ["Gaming", "Reading", "Napping", "Walk"],
+      "emojis": ["🎮", "📚", "💤", "🚶"]
     },
     {
-        "question": "What's the best cereal milk ratio?",
-        "options": ["Milk first (Monster)", "Cereal first (The only way)", "Dry cereal, no milk", "I eat cereal with water"],
-        "emojis": ["🥛", "🥣", "🚫", "💧"]
+      "question": "Most trusted browser?",
+      "options": ["Chrome", "Firefox", "Safari", "Edge"],
+      "emojis": ["🌐", "🦊", "🍏", "🎨"]
     },
     {
-    "question": "You're at a party and someone hands you a mystery drink. What do you do?",
-    "options": ["Drink it (YOLO)", "Sniff it first", "Make someone else try it first", "Politely decline and leave"],
-    "emojis": ["🥤", "👃", "👀", "🚪"]
+      "question": "Best programming paradigm?",
+      "options": ["OOP", "Functional", "Procedural", "Logic"],
+      "emojis": ["📦", "🔗", "📜", "🤔"]
     },
     {
-    "question": "Which fast food chain would survive a Hunger Games scenario?",
-    "options": ["McDonald's (unstoppable)", "Taco Bell (chaotic energy)", "Chick-fil-A (tactical kindness)", "Subway (??? they’re just there)"],
-    "emojis": ["🍔", "🌮", "🐔", "🥪"]
+      "question": "Which OS is superior?",
+      "options": ["Windows", "Linux", "MacOS", "BSD"],
+      "emojis": ["🪟", "🐧", "🍎", "🌊"]
     },
     {
-    "question": "The ultimate *red flag* in a person is when they say:",
-    "options": ["'I don’t like dogs'", "'Pineapple does not belong on pizza'", "'I don’t watch movies or tv shows'", "'I don’t use emojis'"],
-    "emojis": ["🐶", "🍍", "🎥", "❌"]
+      "question": "Which social media is the worst?",
+      "options": ["Twitter", "Instagram", "Facebook", "TikTok"],
+      "emojis": ["🐦", "📸", "📘", "🎵"]
     },
     {
-    "question": "What's the **worst** thing to find in your fridge?",
-    "options": ["Moldy leftovers", "An unmarked mystery container", "Milk that expired 3 months ago", "Nothing. It's empty."],
-    "emojis": ["🤢", "❓", "🥛", "😨"]
+      "question": "Preferred way to debug?",
+      "options": ["Print", "Debugger", "Rubber Duck", "Guessing"],
+      "emojis": ["🖨️", "🔍", "🦆", "🎲"]
     },
     {
-    "question": "What's the correct way to pronounce 'GIF'?",
-    "options": ["Hard G (like 'gift')", "Soft G (like 'jif')", "I just say 'animated meme'", "I avoid saying it out loud"],
-    "emojis": ["🧐", "🤔", "😂", "😶"]
+      "question": "Worst tech trend?",
+      "options": ["NFTs", "Crypto", "Metaverse", "AI Hype"],
+      "emojis": ["🖼️", "💰", "🌐", "🤖"]
     },
     {
-    "question": "Your internet goes out for a full day. What do you do?",
-    "options": ["Read a book (gross)", "Touch grass", "Panic and restart the router 100 times", "Accept my fate and sleep"],
-    "emojis": ["📖", "🌱", "🔄", "😴"]
+      "question": "What’s your caffeine limit?",
+      "options": ["1 cup", "2-3 cups", "Caffeine fiend", "No caffeine"],
+      "emojis": ["☕", "🔥", "⚡", "🚫"]
     },
     {
-    "question": "Which of these animals would make the worst pet?",
-    "options": ["Octopus (too smart)", "Goat (chaos incarnate)", "Parrot (never stops talking)", "Spider (why would you do this)"],
-    "emojis": ["🐙", "🐐", "🦜", "🕷️"]
+      "question": "Best way to take notes?",
+      "options": ["Handwritten", "Typed", "Tablet", "No notes"],
+      "emojis": ["📝", "⌨️", "📱", "🤷"]
     },
     {
-    "question": "You can only listen to one genre for the rest of your life. Choose wisely.",
-    "options": ["Pop", "Rock", "Country", "EDM"],
-    "emojis": ["🎤", "🎸", "🤠", "🎧"]
+      "question": "Most annoying coding error?",
+      "options": ["Segfault", "Null Pointer", "Off-by-One", "Syntax"],
+      "emojis": ["💀", "🚫", "➕", "📜"]
     },
     {
-    "question": "What’s the **worst** part of getting older?",
-    "options": ["Taxes", "Back pain for no reason", "Liking schedules & routines", "Not understanding new slang"],
-    "emojis": ["💰", "🤕", "📅", "🧓"]
+      "question": "Favorite gaming platform?",
+      "options": ["PC", "Console", "Mobile", "Board Games"],
+      "emojis": ["🖥️", "🎮", "📱", "🎲"]
+    },
+    {
+      "question": "Best data structure?",
+      "options": ["Array", "Linked List", "Hash Table", "Tree"],
+      "emojis": ["📊", "🔗", "🔍", "🌳"]
+    },
+    {
+      "question": "Most overused tech buzzword?",
+      "options": ["AI", "Blockchain", "Cloud", "Synergy"],
+      "emojis": ["🤖", "🔗", "☁️", "⚡"]
+    },
+    {
+      "question": "What’s the best way to learn coding?",
+      "options": ["Books", "Videos", "Projects", "Docs"],
+      "emojis": ["📖", "🎥", "🔧", "📜"]
+    },
+    {
+      "question": "Best way to end a week?",
+      "options": ["Gaming", "Sleeping", "Hanging Out", "Netflix"],
+      "emojis": ["🎮", "😴", "🍻", "📺"]
+    },
+    {
+      "question": "Most satisfying feeling in CS?",
+      "options": ["Fixing a bug", "Optimizing code", "Deploying", "Learning a new language"],
+      "emojis": ["🔧", "⚡", "🚀", "🧠"]
+    },
+    {
+      "question": "Best genre of music while coding?",
+      "options": ["Lo-Fi", "Electronic", "Classical", "Silence"],
+      "emojis": ["🎵", "🎛️", "🎻", "🤫"]
+    },
+    {
+      "question": "Which file format is the worst?",
+      "options": ["CSV", "JSON", "XML", "YAML"],
+      "emojis": ["📄", "🔢", "📜", "📝"]
+    },
+    {
+      "question": "What’s your backup strategy?",
+      "options": ["Cloud", "External Drive", "Git", "I don’t"],
+      "emojis": ["☁️", "💾", "🔄", "😬"]
+    },
+    {
+      "question": "How do you handle deadlines?",
+      "options": ["Plan ahead", "Work steadily", "Last minute", "Panic"],
+      "emojis": ["📅", "📈", "⏳", "😱"]
+    },
+    {
+      "question": "What’s the best way to eat cereal?",
+      "options": ["Milk first", "Cereal first", "Dry", "With water"],
+      "emojis": ["🥛➡️🥣", "🥣➡️🥛", "🚫🥛", "💦"]
+    },
+    {
+      "question": "Which is the worst roommate habit?",
+      "options": ["Dishes pile-up", "Stealing food", "Weird noises", "Never home"],
+      "emojis": ["🍽️", "🍕", "🔊", "🏃"]
+    },
+    {
+      "question": "Which is the worst texting habit?",
+      "options": ["One-word replies", "Ignoring texts", "Typing… then nothing", "Spam"],
+      "emojis": ["😐", "🙈", "💬", "📢"]
+    },
+    {
+      "question": "Are boneless wings just chicken nuggets?",
+      "options": ["Yes", "No", "Who cares?", "Never thought about it"],
+      "emojis": ["✅", "❌", "🤷", "🤔"]
+    },
+    {
+      "question": "Which is the worst work/study distraction?",
+      "options": ["Phone", "Roommates", "Internet", "Your own brain"],
+      "emojis": ["📱", "🏠", "🌐", "🧠"]
+    },
+    {
+      "question": "What’s the best pasta shape?",
+      "options": ["Spaghetti", "Penne", "Bowtie", "Macaroni"],
+      "emojis": ["🍝", "🥄", "🎀", "🧀"]
     }
 ]
-  
   

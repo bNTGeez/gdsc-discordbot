@@ -57,7 +57,7 @@ function buildPollEmbed(poll) {
   const embed = new EmbedBuilder()
     .setTitle('Daily Chaos Poll')
     .setDescription(poll.question)
-    .setColor('#FFAA00');
+    .setColor('#248344');
 
   let totalVotes = 0;
   poll.options.forEach(opt => {
@@ -90,7 +90,7 @@ function buildPollButtons(poll) {
       new ButtonBuilder()
         .setCustomId(`pollVote::${opt}`) // store the option in customId
         .setLabel(opt)
-        .setStyle(ButtonStyle.Primary)
+        .setStyle(ButtonStyle.Success)
         .setEmoji(poll.emojis[i] || null) // optional
     );
   });
