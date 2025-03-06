@@ -16,7 +16,9 @@ const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMessages,
+    GatewayIntentBits.MessageContent,
     GatewayIntentBits.GuildMessageReactions,
+    GatewayIntentBits.GuildMembers,
   ],
   partials: [Partials.Message, Partials.Channel, Partials.Reaction],
 });
@@ -79,7 +81,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
   }
 });
 
-// Add this section for event handling
+// Load reaction events
 const eventsPath = path.join(__dirname, "events");
 const eventFiles = fs
   .readdirSync(eventsPath)
@@ -94,5 +96,3 @@ for (const file of eventFiles) {
     client.on(event.name, (...args) => event.execute(...args));
   }
 }
-
-client.login(process.env.DISCORDTOKEN);
